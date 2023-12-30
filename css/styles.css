@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Silkscreen:wght@400;700&display=swap");
+
+* {
+  font-family: "Raleway";
+}
+
+:root {
+  --bradius: 5px;
+}
+
+body#login {
+  background: url(../img/bgIndex/messi.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body#login > main > img:first-child {
+  display: none;
+}
+
+body#login main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body#login main form {
+  width: 364px;
+  height: 301px;
+  border-radius: var(--bradius);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+body#login main form div,
+button {
+  box-sizing: border-box;
+  margin: 0 35px 0 37px;
+}
+
+body#login main form h1 {
+  width: 192px;
+  height: 37px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin: 32px 86px 0 86px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+  border-radius: var(--bradius);
+  margin-top: -0.3rem;
+}
+
+input:active {
+  border: 1px solid #c6c6c6;
+  box-shadow: inset 0px 0px 3px rgba(228, 23, 23, 0.18);
+}
+
+input:hover {
+  cursor: text;
+}
+
+button {
+  background: #374785;
+  border: 1px solid #24305e;
+  border-radius: var(--bradius);
+  text-align: center;
+  color: #ffffff;
+}
+
+button#loggIn {
+  width: 80%;
+  height: 2.6rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  height: 64px;
+  top: calc(100% - 64px);
+  background-color: white;
+  text-align: right;
+}
+
+footer img {
+  margin: 15px 18px 17px;
+}
+
+@media (max-width: 500px) {
+  body#login {
+    background: none;
+    position: relative;
+  }
+
+  body#login main {
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  body#login main form div {
+    margin: 0;
+  }
+
+  body#login main form h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  body#login main form {
+    width: 250px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    background: none;
+  }
+
+  body#login > main > img:first-child {
+    display: block;
+    width: 199px;
+    height: 238px;
+    margin-top: -7rem;
+    margin-bottom: -6.5rem;
+  }
+
+  button#loggIn {
+    width: 100%;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 0.3rem;
+  }
+
+  footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+}
+
+/*Map.html*/
+nav {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  z-index: 100;
+  background: none;
+}
+
+button.loggedOut {
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-top: 0.5rem;
+}
+
+#guayerdChico {
+  display: none;
+}
+
+#scaloneta {
+  width: 113px;
+  height: 18px;
+  margin-left: 15px;
+}
+
+#burguer {
+  border: none;
+}
+
+#burguer > span {
+  width: 30px;
+  height: 19px;
+  color: #1e3261;
+}
+
+#map {
+  height: calc(100vh - 64px);
+  z-index: 0;
+}
+
+select {
+  box-sizing: border-box;
+  position: absolute;
+  width: 326px;
+  height: 38px;
+  left: calc((100vw / 2) - (326px / 2));
+  top: 88px;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--bradius);
+  outline: 0;
+  z-index: 50;
+}
+
+li {
+  font-size: 20px;
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  .loggedOut {
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 14px;
+  }
+  li:last-child {
+    margin-bottom: -10px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #guayerd {
+    display: none;
+  }
+
+  #guayerdChico {
+    display: inline-block;
+  }
+
+  #scaloneta {
+    width: 113px;
+    height: 18px;
+    margin-left: -145px;
+  }
+
+  .loggedOut {
+    width: 100%;
+    font-weight: 900;
+    font-size: 14px;
+    border-radius: 5px;
+    height: 38px;
+  }
+
+  li:last-child {
+    margin-bottom: -10px;
+    margin-top: -15px;
+  }
+}
+
+/* jugadores.html */
+#tituloJugadores {
+  width: 100%;
+  margin: 1.3em auto;
+  font-size: 36px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 > span {
+  color: #119dd8;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.navbar-nav {
+  margin-left: 5em;
+}
+
+div.card div h5 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.img-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img-wrapper > span {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  left: 82%;
+}
+
+div.card {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 0;
+  width: 32%;
+}
+
+section > div.card > :nth-child(2) {
+  z-index: 10;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 5px 5px;
+}
+
+div.card > div > p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+}
+
+div.card > div > p:last-child {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+main.jugadores {
+  padding: 2vw;
+  width: 100%;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 991px) {
+    ul.navbar-nav {
+      margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 750px) {
+  ul.navbar-nav {
+    margin-left: 0;
+  }
+
+  div.card {
+    width: 32%;
+  }
+
+  body main section div.card div.card-body h5.card-title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .img-wrapper > span {
+    position: absolute;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    left: 80%;
+  }
+
+  div.card > div > p {
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0;
+  }
+
+  div.card > div > p:last-child {
+    font-weight: 500;
+    font-size: 11px;
+    margin: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  ul.navbar-nav {
+    margin-left: 0;
+  }
+
+  div.card {
+    width: 100%;
+  }
+  .img-wrapper {
+    height: 350px;
+    overflow: hidden;
+  }
+}
