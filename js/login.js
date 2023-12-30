@@ -2,7 +2,7 @@ let logged = localStorage.getItem("logged");
 if ( logged == "true" ) window.location.href = "map.html";
 
 const credenciales = {
-    email: "estudiante@guayerd.com",
+    email: "guest@worldcup.com",
     password: "123456",
     };
 
