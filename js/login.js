@@ -2,8 +2,8 @@ let logged = localStorage.getItem("logged");
 if ( logged == "true" ) window.location.href = "map.html";
 
 const credenciales = {
-    email: "guest@worldcup.com",
-    password: "123456",
+    email: "guest@demo.com",
+    password: "1234",
     };
 
 let form = document.querySelector('form');
